@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.unicorn.tianxie.mineshoes.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_fl_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey0"
+        android:layout_above="@+id/ll"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ll_tab_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/txt_home"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:text="@string/menu_main_home"
+                android:textColor="@color/colorGrey"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/icon_home"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/txt_home"
+                android:src="@drawable/baseline_home_black_18dp" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ll_tab_myaccount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/txt_myaccount"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:text="@string/menu_main_myaccount"
+                android:textColor="@color/colorGrey"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/icon_myaccount"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/txt_myaccount"
+                android:src="@drawable/baseline_person_black_18dp" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ll_tab_department"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/txt_department"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:text="@string/menu_main_department"
+                android:textColor="@color/colorGrey"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/icon_department"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/txt_department"
+                android:src="@drawable/baseline_format_list_bulleted_black_18dp" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ll_tab_favorites"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/txt_favorites"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:text="@string/menu_main_favorites"
+                android:textColor="@color/colorGrey"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/icon_favorites"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/txt_favorites"
+                android:src="@drawable/baseline_favorite_black_18dp" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/ll_tab_cart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/txt_cart"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:layout_marginBottom="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="center"
+                android:text="@string/menu_main_cart"
+                android:textColor="@color/colorGrey"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/icon_cart"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/txt_cart"
+                android:src="@drawable/baseline_shopping_cart_black_18dp" />
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+</RelativeLayout>
